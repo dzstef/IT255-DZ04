@@ -1,0 +1,197 @@
+@dark-boja: #7bab2e;
+@plava-boja: #0000FF;
+@akva-boja: #00FFFF;
+@chartreuse-boja: #7fff00;
+@width: 100%;
+@width-auto: auto;
+
+#igr{   
+    float: left;
+    width: 150px;
+    height: 150px;
+    border: 2px solid red;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#tek(@lSize: 10px; @tSize: 0px){
+	position: relative;
+	text-shadow: 4px 4px 4px #FF0000;
+	left: @lSize;
+	top: @tSize;
+}
+
+/* slika prve igracke*/
+#igracka1{   
+   #igr;
+}
+
+/* slika druge igracke*/
+#igracka2{
+   #igr
+}
+
+/* slika trece igracke*/
+#igracka3{
+    #igr
+}
+
+/* tekst koji opisuje igracku 1*/
+#tekst1{
+   #tek;
+}
+
+/* tekst koji opisuje igracku 2*/
+#tekst2{
+	#tek(200px, -28px);
+}
+
+/* tekst koji opisuje igracku 3*/
+#tekst3{
+	#tek(400px, -55px);    
+    right: -400px;
+}
+
+body{    
+   background: url(slike/pozadina.jpg) no-repeat;
+   background-size: 1500px 1500px;
+}
+
+/* Zaglavlje*/
+header{
+   display: table;
+   width: @width;
+   background: url('slike/trava.jpg') repeat scroll 0% 0% transparent; 
+   border: 2px solid darken(@dark-boja, 20%);  
+}
+
+/* Navigacija*/
+nav{
+  width: @width;    
+}   
+
+/* Meni raspored */
+ul{
+    list-style-type: none;
+    margin: 0;         
+    padding: 0;
+    overflow: hidden;     
+}
+
+/* Raspored stavki*/
+li{
+    float: left;    
+}
+
+/* Podesavanje linka*/
+a:link, a:visited {    
+    display: block;
+    width: 172.5px;
+    font-weight: bold;
+    color: @plava-boja;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Prelazak misa preko menija */
+a:hover, a:active {
+    background-color: activecaption;
+}
+
+/* Podesavanje naslovne slike */
+img{
+    display: inline-table;
+    opacity: 0.8;  
+    float:left; 
+    width: 350px;
+}
+
+/* Podesavanje naziva prodavnice igracaka*/
+#naziv{
+    color: @akva-boja;
+    font-size: large;   
+    float: left;
+    text-shadow: 2px 2px #FF0000;
+    display: table-cell;
+    width: @width-auto;
+    margin-left: 50px;    
+}
+
+/* Polje za pretragu podesavanje*/
+#pretraga{    
+    margin-left: 50px;
+    font-size: 30px;
+    float: left;
+    color: @akva-boja;
+}
+
+/*Naslovna*/
+#sec1{
+    float: left;          
+    width: @width;
+    background: url('slike/zaglavljePozadina.jpg') no-repeat scroll 0% 0% transparent;
+    background-size: 100% 100%;
+}
+
+/* Podesavanje slajda*/
+#slajdovi{
+    margin-top: 50px;
+    margin-bottom: 25px;    
+    float: right;    
+    border: 2px solid blue;
+}
+
+/* podesavanje teksta u zaglavlju*/
+#tekstZaglavlje{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: left;
+    color: black;
+}
+
+/*podesavanje slike deteta*/
+#deca{
+    float: right;
+    width: 200px;
+    height: 200px;         
+    position: absolute;
+    top: 250px;
+    left: 900px;   
+}
+
+/* podesavanje naslova*/
+#naslov{   
+    width: @width;    
+    background-color: antiquewhite;
+    float: left;
+    color: @plava-boja;
+    font-size: 25px;      
+}
+
+/* podesavanje sadrzaja igracke*/
+#igracke{
+    display: table;
+    height: 372px;
+    width: 600px;
+
+}
+
+/* footer*/
+footer{    
+    width: @width;    
+    background-color: activeborder;
+    border: 2px solid @plava-boja;
+}
+
+/* tekst u footer-u*/
+#info{
+    font-size: 20px;
+    color: @akva-boja;
+}
+
+
+
